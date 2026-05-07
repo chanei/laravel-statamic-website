@@ -4,7 +4,31 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>{{ title ?? site:name }}</title>
+
+        <meta name="description" content="{{ seo_description ?? site:description }}">
+        <meta name="keywords" content="{{ seo_keywords ?? site:keywords }}">
+        <meta name="robots" content="index, follow">
+
+        <meta property="og:title" content="{{ title ?? site:name }}">
+        <meta property="og:description" content="{{ seo_description ?? site:description }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ current_url }}">
+        {{ if seo_image }}
+            <meta property="og:image" content="{{ seo_image }}">
+        {{ /if }}
+
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+
         {{ vite src="resources/js/site.js|resources/css/site.css" }}
     </head>
     <body class="min-h-screen flex flex-col bg-[#fdf7f5]">

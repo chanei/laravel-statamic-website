@@ -17,3 +17,5 @@ Website designed using statamic
 - If Deploying on sharehosting i.e. cpanel don't forget to remove the hot file. because it will trick the server thinking it is still in development mode
 - From the file manager ```public/hot   ← DELETE THIS FILE```
 - or from the terminal ```rm public/hot```
+
+- ```https://realfavicongenerator.net/``` generate favicons
