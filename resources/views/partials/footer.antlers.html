@@ -25,7 +25,7 @@
             </div>
 
             <div>
-                <h3 class="font-bold text-lg mb-4 text-white">Subscribe to your newsletter</h3>
+                <h3 class="font-bold text-lg mb-4 text-white">Subscribe to our newsletter</h3>
                 <p class="text-white/40 mb-4">
                     Stay updated with our latest news and initiatives.
                 </p>
@@ -47,6 +47,9 @@
                         </div>
                     {{ /if }}
                     <div class="flex gap-2">
+                        <div style="display:none;" aria-hidden="true">
+                            <input type="text" name="honeypot" value="" tabindex="-1" autocomplete="off">
+                        </div>
                         <input type="email" name="email" placeholder="Your email address" class="bg-[#2a3a4d] text-white placeholder:text-white/40 border border-white/10 focus:outline-none focus:ring-2 focus:ring-orange-500 p-2 rounded-2xl" required />
                         <button type="submit" class="px-4 py-2 bg-orange-500 text-white rounded-full hover:bg-orange-600 transition">
                             Subscribe
