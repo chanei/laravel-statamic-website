@@ -509,50 +509,174 @@
 
     </div>
 
-    <section class="px-6 md:px-14 lg:px-20 py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
-
-            <img src="{{ asset('assets/landing/hero.jpg') }}" alt="alt image" class="w-full h-48 object-cover" />
-
-            <div class="p-5 flex flex-col flex-1">
-                <span class="text-xs font-medium px-2 py-1 rounded-full w-fit mb-3
-                    bg-orange-100 text-orange-600">
-                    Toolkit
-                </span>
-
-                <h3 class="font-bold text-gray-900 text-lg mb-2">The title</h3>
-
-
-                <p class="text-sm text-gray-400 mb-1">Author 1</p>
-
-
-                <p class="text-sm text-gray-400 mb-3">2009</p>
-
-                <p class="text-gray-500 text-sm mb-4 flex-1">now this is the summary</p>
-
-                <div class="flex flex-wrap gap-2 mb-4">
-                    <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">Tag value</span>
-                </div>
-
-                {{-- {{ if file }}
-                <a href="{{ file }}" target="_blank"
-                    class="mt-auto inline-flex items-center gap-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-full w-fit">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
-                    Download
-                </a>
-                {{ elseif external_url }}
-                <a href="{{ external_url }}" target="_blank"
-                    class="mt-auto inline-flex items-center gap-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-full w-fit">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                    View Resource
-                </a>
-                {{ /if }} --}}
+    {{-- Testimonials --}}
+    <div class="px-6 md:px-14 lg:px-20 py-24">
+        {{-- Section heading --}}
+        <div class="flex flex-col items-center mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-center">What People Say</h2>
+            <div class="flex items-center gap-2">
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
+                <div class="h-[3px] w-6 bg-orange-500 rounded-full"></div>
+                <div class="h-[2px] w-12 bg-orange-300 rounded-full"></div>
             </div>
         </div>
+
+        {{-- Carousel track --}}
+        <div class="overflow-hidden" id="t-wrap">
+            <div class="flex gap-5 mb-2 transition-transform duration-500 ease-in-out" id="t-track">
+
+                <div class="flex-none w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] bg-white shadow-md rounded-2xl p-7 flex flex-col gap-4">
+                    <p class="text-gray-500 text-sm leading-relaxed flex-1 pt-6 relative before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-5xl before:text-orange-400 before:opacity-50 before:font-serif">
+                        Joining this network changed how I think about philanthropy. The conversations are real, the connections lasting, and the impact speaks for itself.
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-gray-100 pt-4">
+                        <img
+                            src=""
+                            alt=""
+                            class="h-11 w-11 rounded-full object-cover border-2 border-orange-200 flex-shrink-0"
+                        />
+                        {{-- <div class="h-11 w-11 rounded-full bg-orange-50 border-2 border-orange-200 flex items-center justify-center text-orange-600 font-medium text-sm flex-shrink-0">AM</div> --}}
+                        <div>
+                            <p class="font-semibold text-sm">Amara Mensah</p>
+                            <p class="text-gray-400 text-xs">GivingForward Foundation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-none w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] bg-white shadow-md rounded-2xl p-7 flex flex-col gap-4">
+                    <p class="text-gray-500 text-sm leading-relaxed flex-1 pt-6 relative before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-5xl before:text-orange-400 before:opacity-50 before:font-serif">
+                        Joining this network changed how I think about philanthropy. The conversations are real, the connections lasting, and the impact speaks for itself.
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-gray-100 pt-4">
+                        <div class="h-11 w-11 rounded-full bg-orange-50 border-2 border-orange-200 flex items-center justify-center text-orange-600 font-medium text-sm flex-shrink-0">AM</div>
+                        <div>
+                            <p class="font-semibold text-sm">Amara Mensah</p>
+                            <p class="text-gray-400 text-xs">GivingForward Foundation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-none w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] bg-white shadow-md rounded-2xl p-7 flex flex-col gap-4">
+                    <p class="text-gray-500 text-sm leading-relaxed flex-1 pt-6 relative before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-5xl before:text-orange-400 before:opacity-50 before:font-serif">
+                        Joining this network changed how I think about philanthropy. The conversations are real, the connections lasting, and the impact speaks for itself.
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-gray-100 pt-4">
+                        <div class="h-11 w-11 rounded-full bg-orange-50 border-2 border-orange-200 flex items-center justify-center text-orange-600 font-medium text-sm flex-shrink-0">AM</div>
+                        <div>
+                            <p class="font-semibold text-sm">Amara Mensah</p>
+                            <p class="text-gray-400 text-xs">GivingForward Foundation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-none w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)] bg-white shadow-md rounded-2xl p-7 flex flex-col gap-4">
+                    <p class="text-gray-500 text-sm leading-relaxed flex-1 pt-6 relative before:content-['\201C'] before:absolute before:top-0 before:left-0 before:text-5xl before:text-orange-400 before:opacity-50 before:font-serif">
+                        Joining this network changed how I think about philanthropy. The conversations are real, the connections lasting, and the impact speaks for itself.
+                    </p>
+                    <div class="flex items-center gap-3 border-t border-gray-100 pt-4">
+                        <div class="h-11 w-11 rounded-full bg-orange-50 border-2 border-orange-200 flex items-center justify-center text-orange-600 font-medium text-sm flex-shrink-0">AM</div>
+                        <div>
+                            <p class="font-semibold text-sm">Amara Mensah</p>
+                            <p class="text-gray-400 text-xs">GivingForward Foundation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {{-- Controls --}}
+        <div class="flex items-center justify-center gap-3 mt-8" id="t-controls"></div>
     </div>
 
-</section>
+    <script>
+        const track = document.getElementById('t-track');
+        const wrap = document.getElementById('t-wrap');
+        const controls = document.getElementById('t-controls');
+        const cards = track.querySelectorAll(':scope > div');
+        let current = 0;
+
+        const visible = () => wrap.offsetWidth < 640 ? 1 : wrap.offsetWidth < 1024 ? 2 : 3;
+        const total = () => Math.ceil(cards.length / visible());
+
+        function buildControls() {
+            controls.innerHTML = '';
+            const prev = document.createElement('button');
+            prev.className = 'h-9 w-9 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition';
+            prev.innerHTML = '<svg class="h-4 w-4 stroke-gray-500" fill="none" viewBox="0 0 24 24" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>';
+            prev.onclick = () => go(current - 1);
+            controls.appendChild(prev);
+
+            for (let i = 0; i < total(); i++) {
+                const dot = document.createElement('div');
+                dot.className = `h-2 w-2 rounded-full cursor-pointer transition-all ${i === current ? 'bg-orange-500 scale-125' : 'bg-gray-300'}`;
+                dot.onclick = () => go(i);
+                controls.appendChild(dot);
+            }
+
+            const next = document.createElement('button');
+            next.className = 'h-9 w-9 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-50 transition';
+            next.innerHTML = '<svg class="h-4 w-4 stroke-gray-500" fill="none" viewBox="0 0 24 24" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>';
+            next.onclick = () => go(current + 1);
+            controls.appendChild(next);
+        }
+
+        function go(idx) {
+            current = Math.max(0, Math.min(idx, total() - 1));
+            const cardW = cards[0].offsetWidth + 20;
+            track.style.transform = `translateX(-${current * visible() * cardW}px)`;
+            buildControls();
+        }
+
+        buildControls();
+        window.addEventListener('resize', () => { buildControls(); go(0); });
+    </script>
+    {{-- end testimonials --}}
+
+
+    <section class="px-6 md:px-14 lg:px-20 py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden flex flex-col">
+
+                <img src="{{ asset('assets/landing/hero.jpg') }}" alt="alt image" class="w-full h-48 object-cover" />
+
+                <div class="p-5 flex flex-col flex-1">
+                    <span class="text-xs font-medium px-2 py-1 rounded-full w-fit mb-3
+                        bg-orange-100 text-orange-600">
+                        Toolkit
+                    </span>
+
+                    <h3 class="font-bold text-gray-900 text-lg mb-2">The title</h3>
+
+
+                    <p class="text-sm text-gray-400 mb-1">Author 1</p>
+
+
+                    <p class="text-sm text-gray-400 mb-3">2009</p>
+
+                    <p class="text-gray-500 text-sm mb-4 flex-1">now this is the summary</p>
+
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="text-xs bg-gray-100 text-gray-500 px-2 py-1 rounded-full">Tag value</span>
+                    </div>
+
+                    {{-- {{ if file }}
+                    <a href="{{ file }}" target="_blank"
+                        class="mt-auto inline-flex items-center gap-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-full w-fit">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+                        Download
+                    </a>
+                    {{ elseif external_url }}
+                    <a href="{{ external_url }}" target="_blank"
+                        class="mt-auto inline-flex items-center gap-2 text-sm font-medium text-white bg-orange-500 hover:bg-orange-600 transition px-4 py-2 rounded-full w-fit">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                        View Resource
+                    </a>
+                    {{ /if }} --}}
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 
     {{-- Footer --}}

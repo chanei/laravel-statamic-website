@@ -1,0 +1,41 @@
+title: Testimonials
+fields:
+  -
+    handle: heading
+    field:
+      type: text
+      display: Heading
+  -
+    handle: testimonials
+    field:
+      type: replicator
+      display: Testimonials
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  handle: name
+                  field:
+                    type: text
+                    display: Name
+                -
+                  handle: organization
+                  field:
+                    type: text
+                    display: Organization
+                -
+                  handle: testimony
+                  field:
+                    type: textarea
+                    display: Testimony
+                -
+                  handle: image
+                  field:
+                    container: assets
+                    max_files: 1
+                    type: assets
+                    display: Image

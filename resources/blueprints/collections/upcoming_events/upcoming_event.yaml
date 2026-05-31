@@ -42,6 +42,11 @@ tabs:
               remove_empty_nodes: false
               type: bard
               display: Content
+          -
+            handle: register_link
+            field:
+              type: link
+              display: 'Register Link'
   sidebar:
     display: Sidebar
     sections:

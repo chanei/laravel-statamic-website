@@ -2,14 +2,26 @@
     <div class="max-w-3xl mx-auto">
 
         {{ featured_image }}
-            <img src="{{ url }}" class="w-full mb-6" />
+            <img src="{{ url }}" class="w-full rounded-2xl mb-6" />
         {{ /featured_image }}
 
         <h1 class="text-4xl font-bold mb-4">{{ title }}</h1>
 
         <p class="text-gray-500 mb-4">
             {{ start_date format="F j" }} - {{ end_date format="F j, Y" }}
+            {{ if time }} &middot; {{ time }}{{ /if }}
         </p>
+
+        {{ if register_link }}
+        <a
+            href="{{ register_link }}"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-sm px-4 py-2 rounded-full transition mb-10"
+        >
+            Register for event
+        </a>
+        {{ /if }}
 
         <div class="prose max-w-none">
             {{ content }}

@@ -150,3 +150,8 @@ fields:
               fields:
                 -
                   import: collection_listing
+            testimonials:
+              display: Testimonials
+              fields:
+                -
+                  import: testimonials

@@ -4,7 +4,7 @@ blueprint: pages
 title: Home
 author: b3e81ce8-7344-482c-9ac6-415d9813424a
 updated_by: b3e81ce8-7344-482c-9ac6-415d9813424a
-updated_at: 1776380177
+updated_at: 1778526966
 blocks:
   -
     id: XlFziSH2I4DIIPdLxHF0_
@@ -132,6 +132,27 @@ blocks:
     heading: 'Latest Articles'
     limit: 3
     type: latest_blogs
+    enabled: true
+  -
+    id: D8BsIgGG1UdmS1HhzMNTO
+    heading: 'What People Say'
+    testimonials:
+      -
+        id: huyFcSJmDTvYAQzEhh8ps
+        name: 'Amara Mensah'
+        organization: 'GivingForward Foundation'
+        testimony: 'Joining this network changed how I think about philanthropy. The conversations are real, the connections lasting, and the impact speaks for itself.'
+        type: new_set
+        enabled: true
+      -
+        id: noQ5inWwd4XnKxFo0xaQY
+        name: 'Amara Mensah'
+        organization: 'GivingForward Foundation'
+        testimony: 'Joining this network changed how I think about philanthropy. The conversations are real, the connections lasting, and the impact speaks for itself.'
+        type: new_set
+        enabled: true
+        image: landing/doe.png
+    type: testimonials
     enabled: true
   -
     id: KvDE_1NXUaw0eWyAuzfiq
