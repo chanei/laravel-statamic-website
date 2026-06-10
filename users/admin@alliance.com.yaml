@@ -8,6 +8,11 @@ preferences:
       view: tree
     blog:
       view: list
+      columns:
+        - title
+        - date
+        - slug
+        - status
     listing_mode: list
     publications_toolkits:
       view: list
@@ -24,6 +29,7 @@ preferences:
         - status
         - start_date
         - end_date
+        - date
     past_event_recaps:
       view: list
     videos_event_recordings:
