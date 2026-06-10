@@ -11,7 +11,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
 
-# Copy project files
+# Copy project files to working directory
 COPY . .
 
 RUN apk add --no-cache nodejs npm
