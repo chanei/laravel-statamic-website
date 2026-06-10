@@ -37,7 +37,7 @@ RUN nginx -t
 
 EXPOSE 80
 
-RUN php artisan statamic:stache:clear
-RUN php artisan statamic:stache:warm
+# RUN php artisan statamic:stache:clear
+# RUN php artisan statamic:stache:warm
 
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
