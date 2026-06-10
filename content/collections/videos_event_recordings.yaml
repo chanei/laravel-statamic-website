@@ -4,7 +4,8 @@ template: view_collections/show_videos_event_recordings
 layout: layout
 revisions: false
 route: 'videos-event-recordings/{slug}'
-sort_dir: asc
+sort_dir: desc
+date: true
 date_behavior:
   past: null
   future: null

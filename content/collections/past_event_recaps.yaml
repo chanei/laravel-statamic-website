@@ -5,6 +5,7 @@ layout: layout
 revisions: false
 route: 'past-event-recaps/{slug}'
 sort_dir: desc
+date: true
 date_behavior:
   past: null
   future: null
