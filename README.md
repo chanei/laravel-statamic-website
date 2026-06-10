@@ -1,4 +1,4 @@
-# PRA website
+# Statamic website
 
 Website designed using statamic
 
