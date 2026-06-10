@@ -14,6 +14,9 @@ WORKDIR /var/www/html
 # Copy project files
 COPY . .
 
+RUN apk add --no-cache nodejs npm
+RUN npm install && npm run build
+
 RUN cp .env.example .env
 
 # Install PHP dependencies
