@@ -25,9 +25,12 @@ RUN php artisan key:generate --force
 RUN chown -R www-data:www-data /var/www/html/storage \
     && chmod -R 775 /var/www/html/storage
 
-# Copy nginx config
+# Copy configs
 COPY docker/nginx.conf /etc/nginx/nginx.conf
-COPY docker/supervisord.conf /etc/supervisord/conf.d/app.conf
+COPY docker/supervisord.conf /etc/supervisord.conf
+
+# Validate nginx config at build time
+RUN nginx -t
 
 EXPOSE 80
 
