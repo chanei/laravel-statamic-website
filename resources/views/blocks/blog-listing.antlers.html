@@ -1,6 +1,6 @@
 <div class="px-6 md:px-14 lg:px-20 mb-20">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {{ collection:blog limit="{limit}" sort="date:desc" paginate="true" as="posts" }}
+        {{ collection:blog :limit="limit" sort="date:desc" paginate="true" as="posts" }}
             {{ posts }}
                 {{ partial:components/blog_card }}
             {{ /posts }}
