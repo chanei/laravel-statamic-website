@@ -14,8 +14,12 @@ WORKDIR /var/www/html
 # Copy project files
 COPY . .
 
+RUN cp .env.example .env
+
 # Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
+
+RUN php artisan key:generate --force
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/storage \
